@@ -1,0 +1,45 @@
+
+ <router-outlet></router-outlet>
+  <div>
+  <nav>
+    <img src="https://img.favpng.com/1/9/20/electronic-bill-payment-logo-service-e-commerce-payment-system-png-favpng-7WveaEBWrZpmHNz2JPZhFkfPK.jpg" alt="Logo" class="heading-logo" />
+    <a href="http://localhost:4200/home/1">Home</a>
+    <a href="http://localhost:4200/generatebill/1">Bill Generation</a>
+    <a href="http://localhost:4200/contact">Contact Us</a>
+    <a href="http://localhost:4200/">Logout</a>
+  </nav>
+  <br>
+
+  
+
+
+  
+  
+  <div class=".container">
+    <table>
+      <tr>
+        <th>CustomerId</th>
+        <th>CustomerName</th>
+        <th>address</th>
+        <th>ContactNo</th>
+        <th>Email</th>
+        <th>MeterNo</th>
+        <th>Action</th>
+      </tr>
+
+      <tr>
+        <td>{{customer.customerId}}</td>
+        <td>{{customer.customerName}}</td>
+        
+        <td>{{customer.address}}</td>
+        <td>{{customer.contactNo}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.meterNo}}</td>
+        <td><button (click)="generateBill(customer.customerId)">Generate Bill</button></td>
+      </tr>
+      
+    </table>
+    
+  </div>
+  
+</div>

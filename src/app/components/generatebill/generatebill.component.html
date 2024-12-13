@@ -1,0 +1,38 @@
+<nav>
+  <img src="https://img.favpng.com/1/9/20/electronic-bill-payment-logo-service-e-commerce-payment-system-png-favpng-7WveaEBWrZpmHNz2JPZhFkfPK.jpg" alt="Logo" class="heading-logo" />
+  <a href="http://localhost:4200/home/1">Home</a>
+  <a href="http://localhost:4200/generatebill/1">Bill Generation</a>
+  <a href="http://localhost:4200/contact">Contact Us</a>
+  <a href="http://localhost:4200/">Logout</a>
+</nav>
+<div><br>
+  <form #gform="ngForm">
+    <label>Units Consumed</label>
+    <input type="text" name="unitsused" [(ngModel)]="noofunits" />
+    <button type="button" (click)="generateAmount()">Generate Amount</button>
+  </form>
+</div><br>
+
+<div class=".container">
+  <table>
+    <tr>
+      <th>BillId</th>
+      <th>BillNum</th>
+      <th>BillUnits</th>
+      <th>BillAmount</th>
+      <th>PAYMENT</th>
+    </tr>
+    
+    <tr *ngFor="let bill of bills | paginate: { itemsPerPage: 5, currentPage: page }">
+      <td>{{ bill.billId }}</td>
+      <td>{{ bill.billNum }}</td>
+      <td>{{ bill.billUnits }}</td>
+      <td>{{ bill.amount }}</td>
+      <td><button (click)="payBill(bill.billId)">Pay</button></td>
+    </tr>
+
+    <p *ngIf="bills.length === 0">No bills available to display.</p>
+  </table>
+  
+  <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>

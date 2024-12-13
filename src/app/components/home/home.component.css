@@ -1,0 +1,288 @@
+:host {
+  display: block; /* Ensure the component spans full width */
+  
+  height: 100vh;
+  background-image: url("https://png.pngtree.com/back_origin_pic/04/48/50/84cd2a9fbc6cbd5522b2f048a56703a8.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size:cover
+ 
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.container:hover {
+  transform: translateY(0);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #066469;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+th:hover {
+  background-color: #08464a;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e7f7e5;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+button {
+  background: #2f672b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(11, 225, 146, 0.2);
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(180, 24, 24, 0.2);
+}
+
+button:active {
+  transform: scale(1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #575757;
+  color: #fff;
+}
+
+nav a.active {
+  background-color: #4CAF50;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  td, th {
+    padding: 10px 20px;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 8px 12px;
+    margin: 5px 0;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px 12px;
+  }
+
+  button {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 999;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fab:hover {
+  background-color: #1a63d8;
+  transform: scale(1.1);
+}
+
+.fab:active {
+  transform: scale(1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+tr {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Styling for the navigation bar */
+nav {
+  background-color: #0b9386; /* Dark background for contrast */
+  padding: 15px 20px; /* Padding for sleek layout */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: sticky; /* Keep nav fixed at top */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styling for the logo */
+.heading-logo {
+  width: 60px; /* Set logo width */
+  height: 60px; /* Set logo height */
+  margin-right: 20px; /* Space between logo and links */
+  border-radius: 50%; /* Make logo circular */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add depth */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.heading-logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Intense shadow on hover */
+}
+
+/* Styling for the navigation links */
+nav a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Space between links */
+  font-size: 16px; /* Readable font size */
+  font-weight: 500; /* Slightly bold text */
+  border-radius: 5px; /* Smooth edges */
+  padding: 10px 15px; /* Add spacing for better click area */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0b6158; /* Gray background on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+nav a.active {
+  background-color: #4CAF50; /* Highlight active link */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start;
+  }
+
+  .heading-logo {
+    margin-bottom: 15px; /* Space below logo */
+  }
+
+  nav a {
+    margin: 5px 0; /* Adjust spacing for links */
+  }
+}
+
+
+
+
+
+

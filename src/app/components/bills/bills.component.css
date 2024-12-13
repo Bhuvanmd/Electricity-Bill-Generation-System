@@ -1,0 +1,35 @@
+.bills-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .bills-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bills-table th, .bills-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .bills-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .bills-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+  

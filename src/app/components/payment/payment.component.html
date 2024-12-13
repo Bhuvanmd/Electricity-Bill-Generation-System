@@ -1,0 +1,35 @@
+<!-- src/app/components/payment/payment.component.html -->
+<nav>
+  <img src="https://img.favpng.com/1/9/20/electronic-bill-payment-logo-service-e-commerce-payment-system-png-favpng-7WveaEBWrZpmHNz2JPZhFkfPK.jpg" alt="Logo" class="heading-logo" />
+ 
+  <a href="http://localhost:4200/home/1">Home</a>
+  <a href="http://localhost:4200/generatebill/1">Bill Generation</a>
+  <a href="http://localhost:4200/contact">Contact Us</a>
+  <a href="http://localhost:4200/">Logout</a>
+</nav>
+
+<div class="payment-details">
+  <h3>Payment Details</h3>
+  
+  <p><strong>MeterNumber: </strong><strong style="color: rgb(110, 31, 163);"> {{ payment.billNum }}</strong></p>
+  <p><strong>Units Consumed: </strong> <strong style="color: rgb(110, 31, 163);"> {{ payment.billUnits }} </strong></p>
+  
+  <p><strong>Amount: </strong> <strong style="color:rgb(110, 31, 163)">{{ payment.amount }}</strong>  Rupees</p>
+  <p><strong>Bill ID: </strong> <strong style="color: rgb(110, 31, 163);">{{ payment.billId }}</strong></p>
+ 
+
+
+
+  
+  <button type="button" (click)="makePayment()">Make Payment</button>
+  <p><strong>Payment Status:</strong> {{ payment.paymentStatus }}</p>
+  
+  
+</div>
+<div>
+  <button (click)="generatePDF()">Download Bill as PDF</button>
+</div>
+
+
+
+

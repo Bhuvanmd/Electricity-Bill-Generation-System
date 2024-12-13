@@ -1,0 +1,327 @@
+/* Global styles */
+:host {
+  display: block; /* Ensure the component spans full width */
+  
+  height: 100vh;
+  background-image: url("https://png.pngtree.com/back_origin_pic/04/48/50/84cd2a9fbc6cbd5522b2f048a56703a8.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size:cover
+ 
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  background-image: url("C:\\Users\\bhuva\\Downloads\\login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Center the payment container */
+.payment-details {
+  background-image: url("C:\\Users\\bhuva\\Pictures\\Screenshots\\login1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.payment-details:hover {
+  transform: scale(1.05); /* Slightly increase the size on hover */
+  box-shadow: 3px 8px 20px rgba(51, 7, 208, 0.3); /* Enhance shadow effect on hover */
+}
+
+/* Animation for smooth entrance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.payment-details h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Payment details */
+.payment-details p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.payment-details p strong {
+  color: #000;
+}
+
+/* Input field styling */
+.payment-details input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.payment-details input:focus {
+  border-color: #4e54c8;
+  outline: none;
+}
+
+/* Button styling */
+.payment-details button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #2f672b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.payment-details button:hover {
+  background-color: #1ab920;
+  transform: scale(1.05);
+}
+
+.payment-details button:active {
+  background-color: #373dab;
+  transform: scale(0.98);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .payment-details {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .payment-details h3 {
+    font-size: 20px;
+  }
+
+  .payment-details p {
+    font-size: 14px;
+  }
+
+  .payment-details button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Heading with logo */
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.heading-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heading-logo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+nav {
+  background-color: #0b9386; /* Dark background for contrast */
+  padding: 15px 20px; /* Padding for sleek layout */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: sticky; /* Keep nav fixed at top */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styling for the logo */
+.heading-logo {
+  width: 60px; /* Set logo width */
+  height: 60px; /* Set logo height */
+  margin-right: 20px; /* Space between logo and links */
+  border-radius: 50%; /* Make logo circular */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add depth */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.heading-logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Intense shadow on hover */
+}
+
+/* Styling for the navigation links */
+nav a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Space between links */
+  font-size: 16px; /* Readable font size */
+  font-weight: 500; /* Slightly bold text */
+  border-radius: 5px; /* Smooth edges */
+  padding: 10px 15px; /* Add spacing for better click area */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #12736a; /* Gray background on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+nav a.active {
+  background-color: #4CAF50; /* Highlight active link */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start;
+  }
+
+  .heading-logo {
+    margin-bottom: 15px; /* Space below logo */
+  }
+
+  nav a {
+    margin: 5px 0; /* Adjust spacing for links */
+  }
+}
+
+
+/* Parent container to center the button */
+.button-container {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Button styling */
+button {
+  background-color: #007BFF; /* Primary blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 12px 24px; /* Padding for a larger click area */
+  font-size: 18px; /* Font size for better readability */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+button:active {
+  background-color: #003d80; /* Even darker blue on click */
+  transform: scale(0.95); /* Press-down effect */
+}
+
+button:disabled {
+  background-color: #cccccc; /* Gray background for disabled state */
+  color: #666666; /* Light gray text for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+/* Main container styles (optional styling for the content above the button) */
+.container {
+  text-align: center; /* Center the text inside the container */
+  padding: 20px; /* Add some padding to the container */
+}
+
+/* Button container (centering it below the main content) */
+.button-container {
+  display: flex; /* Enable Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  position: absolute; /* Positioning it at the bottom of the page */
+  left: 0;
+  right: 0;
+  bottom: 50px; /* 50px from the bottom */
+}
+
+/* Button styling */
+button {
+  background-color: #007BFF; /* Primary blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 12px 24px; /* Padding for a larger click area */
+  font-size: 18px; /* Font size for better readability */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+button:active {
+  background-color: #003d80; /* Even darker blue on click */
+  transform: scale(0.95); /* Press-down effect */
+}
+
+button:disabled {
+  background-color: #cccccc; /* Gray background for disabled state */
+  color: #666666; /* Light gray text for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}

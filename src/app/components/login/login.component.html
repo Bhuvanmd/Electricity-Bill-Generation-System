@@ -1,0 +1,44 @@
+<h1>
+  <img src="https://img.favpng.com/1/9/20/electronic-bill-payment-logo-service-e-commerce-payment-system-png-favpng-7WveaEBWrZpmHNz2JPZhFkfPK.jpg" alt="Logo" class="heading-logo" />
+  Welcome to Electricity Bill Generation System
+</h1>
+
+
+
+
+
+<div class="form-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="customer.email"
+          required
+          placeholder="Enter your email"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="customer.password"
+          required
+          placeholder="Enter your password"
+        />
+      </div>
+  
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <p class="redirect">
+      Don't have an account? <a routerLink="/register">Register here</a>
+    </p>
+  </div>
+
+  

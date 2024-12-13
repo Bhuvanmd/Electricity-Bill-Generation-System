@@ -1,0 +1,148 @@
+/* In the component's CSS file */
+:host {
+  display: block; /* Ensure the component spans full width */
+  
+  height: 100vh;
+  background-image: url("https://png.pngtree.com/back_origin_pic/04/48/50/84cd2a9fbc6cbd5522b2f048a56703a8.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size:cover
+ 
+}
+
+
+
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    background-image: url("C:\\Users\\bhuva\\Downloads\\login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+ 
+  .form-container {
+    background-image: url("C:\\Users\\bhuva\\Pictures\\Screenshots\\login1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .form-container:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    box-shadow: 3px 8px 20px rgba(51, 7, 208, 0.3); /* Enhance shadow effect on hover */
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Redirect link styling */
+  .redirect {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .redirect a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .redirect a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    display: flex; /* Use flexbox to align logo and text */
+    align-items: center; /* Center-align items vertically */
+    justify-content: center; /* Center-align items horizontally */
+    font-size: 2.5rem; /* Large and responsive font size */
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    font-weight: 700; /* Bold and impactful */
+    color: #fff; /* White text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    background: linear-gradient(90deg, #4e54c8, #8f94fb); /* Gradient effect */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent for gradient */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Adds spacing */
+    margin: 20px auto; /* Center with margin */
+    border-radius: 10px; /* Slightly rounded edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+    transition: transform 0.3s ease-in-out; /* Animation effect */
+}
+
+h1:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+.heading-logo {
+    width: 50px; /* Adjust size of the logo */
+    height: 50px; /* Keep the logo square */
+    margin-right: 10px; /* Add spacing between logo and text */
+    border-radius: 50%; /* Optional: make the logo circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow around the logo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+}
+
+.heading-logo:hover {
+    transform: scale(1.2); /* Slightly enlarge the logo on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+ 
+  
+  

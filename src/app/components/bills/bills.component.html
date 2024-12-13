@@ -1,0 +1,32 @@
+<div class="bills-container">
+    <h2>Your Bills</h2>
+  
+    <!-- Check if customerBills has any bills -->
+    <div *ngIf="customerBills.length > 0; else noBills">
+      <table class="bills-table">
+        <thead>
+          <tr>
+            <th>Bill Number</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Due Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let bill of customerBills">
+            <td>{{ bill.billNum }}</td>
+            <td>{{ bill.billDesc }}</td>
+            <td>{{ bill.amount | currency }}</td>
+            <!-- <td>{{ bill.dueDate | date }}</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- If no bills, show message -->
+    <ng-template #noBills>
+      <p>You don't have any bills at the moment.</p>
+    </ng-template>
+    
+  </div>
+  
